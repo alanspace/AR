@@ -1,0 +1,26 @@
+Base path: '/Applications/Unity/Hub/Editor/2021.3.26f1/Unity.app/Contents', plugins path '/Applications/Unity/Hub/Editor/2021.3.26f1/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: compileComputeKernel
+  insize=33519 file=Packages/com.aukilabs.unity.manna/Runtime/Resources/Shaders/GpuScannerV1/Markers.compute kernel=find_markers cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=20 km=<UNITY_VERSION=202139> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=gles3 flags=4096 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 9 at Markers.compute(526): use of potentially uninitialized variable (get_finder_side_points)
+  error: 1 plat 9 at Markers.compute(848): Literal floating-point value out of unsigned range for conversion: -1.000000
+  error: 1 plat 9 at Markers.compute(863): Literal floating-point value out of unsigned range for conversion: -1.000000
+ ok=1 outsize=247260
+
+Cmd: compileComputeKernel
+  insize=13158 file=Packages/com.aukilabs.unity.manna/Runtime/Resources/Shaders/GpuScannerV3/Finders.compute kernel=get_corners cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=20 km=<UNITY_VERSION=202139> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=gles3 flags=4096 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 9 at Finders.compute(220): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(222): integer modulus may be much slower, try using uints if possible.
+  error: 1 plat 9 at Finders.compute(230): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(240): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(242): integer modulus may be much slower, try using uints if possible.
+  error: 1 plat 9 at Finders.compute(275): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+ ok=1 outsize=66750
+
+Cmd: compileComputeKernel
+  insize=13465 file=Packages/com.aukilabs.unity.manna/Runtime/Resources/Shaders/GpuScannerV2/Finders.compute kernel=draw_finder_candidates cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=20 km=<UNITY_VERSION=202139> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=gles3 flags=4096 reqs=16385 forceDXC=0 forceFXC=0  error: 1 plat 9 at Finders.compute(244): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(254): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(262): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+  error: 1 plat 9 at Finders.compute(297): 'i': loop control variable conflicts with a previous declaration in the outer scope; most recent declaration will be used
+ ok=1 outsize=38728
+
+Cmd: shutdown
